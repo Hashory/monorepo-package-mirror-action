@@ -19,4 +19,6 @@ COPY src/mirror.sh /scripts/mirror.sh
 COPY src/cleanup.sh /scripts/cleanup.sh
 COPY src/modules.sh /scripts/modules.sh
 
+RUN chmod +x /scripts/mirror.sh
+
 ENTRYPOINT ["/scripts/mirror.sh"]
